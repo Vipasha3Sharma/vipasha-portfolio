@@ -144,7 +144,13 @@ h1,h2,h3,h4{margin:0; line-height:1.2;}
 
 /* ===================== ABOUT ===================== */
 .about-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:start;}
-.about-text{font-size:1.08rem; color:var(--muted); margin:0;}
+.about-copy{display:flex; flex-direction:column; gap:18px;}
+.about-role{
+  font-size:1.05rem; font-weight:800; margin:0;
+  background:linear-gradient(100deg,var(--blue) 10%, var(--green) 50%, var(--orange) 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.about-text{font-size:1.05rem; color:var(--muted); margin:0;}
 .about-mosaic{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
 .mosaic-tile{
   border-radius:var(--radius); padding:20px; display:flex; flex-direction:column; gap:6px;
